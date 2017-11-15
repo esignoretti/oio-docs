@@ -2,8 +2,7 @@
 This is text
 ============
 
-This guide provides a few hints to help users getting started with the `AWS S3 command line client`_ using the OpenIO Swift gateway. By default, the gateway uses the `Swift3`_ middleware to allow the access to OpenIO object storage using Amazon S3 API.
-The AWS CLI allows to use the different APIs provided by AWS, including the `S3`_ and `S3API`_ ones.
+This guide is a test different APIs provided by AWS, including the `S3`_ and `S3API`_ ones.
 
 test subritile
 ==============
