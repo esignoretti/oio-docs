@@ -18,6 +18,7 @@ Contents
    openiocli
    swiftcli
    awscli
+   how-to-cloudbarry
 
 .. end of contents
 
