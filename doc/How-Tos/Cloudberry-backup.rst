@@ -2,7 +2,7 @@
 Configuring Cloudberry Backup with OpenIO SDS
 =============================================
 
-`CloudBerry Backup`_ exists in several forms, from a simple and straightforward free version to a complete solution for managed backups designed for service providers.
+`CloudBerry Backup`__ exists in several forms, from a simple and straightforward free version to a complete solution for managed backups designed for service providers.
 .. __
 
 .. _cb: https://www.cloudberrylab.com/backup.aspx
@@ -39,7 +39,7 @@ Followed by
 .. code-block:: text
   $docker run -ti --tty -p 192.168.1.121:6007:6007 --net=host openio/sds
 
-<<< IMAGE Picture1.jpg>>>>
+.. image:: ./images/Picture1.jpg
 
 These commands download the container image, if it is not available on the system, and launch it with specific options. The container is not usually visible to the rest of the world, but Docker provides a NAT service, which is why we use the –p option. It maps TCP port 6007, accessible only on a private network, to the same port in the external world. The IP address is the IP of my default interface (my_ip:int_port:ext_port).
 At this point, OpenIO SDS is up and running, and the Swift service is available on port 6007 of the local network from your PC. Remember to configure your Windows Firewall to make it accessible from other devices on your network.
@@ -52,39 +52,39 @@ You can download Cloudberry Backup directly from CloudBerry Lab’s website; her
 .. _link: https://www.cloudberrylab.com/backup/windows.aspx
 
 
-<<<< Picture2.jpg>>>>
+.. image:: ./images/Picture2.png
 
 Once it is installed, we have to configure access to the object store. To do this, you can select “Add New Account” from the first menu on the left.
 
 A new window will appear:
 
-<<<<Picture3.jpg>>>>
+.. image:: ./images/Picture3.png
 
 Select the OpenStack Icon and fill in the fields in the dialog box as follows:
 
-<<<<<Picture4.png>>>
+.. image:: ./images/Picture4.png
 
 Please note that you have to select a container or create a new one; otherwise it won’t work.
 
 Click OK, and voilà! The system is ready to rock and roll!
 Click the File menu and you’ll be prompted with the Create Backup Plan wizard.
 
-<<<<picture5.png>>>
+.. image:: ./images/picture5.png
 
 A few more steps and we’re done:
 
-<<<<picture6.png>>>
+.. image:: ./images/picture6.png
 
 
 Select the account you created earlier, and then click Next.
 Give the plan a name, select what you want to back up, how, when, etc., and, in the last window, check Run Backup Now.
 
-<<<<picture7.png>>>
+.. image:: ./images/picture7.png
 
 
 As soon as you click Finish, the backup will start.
 
-<<<<picture8.png>>>>>
+.. image:: ./images/picture8.png
 
 Final note
 ----------
