@@ -2,11 +2,7 @@
 Configuring Cloudberry Backup with OpenIO SDS
 =============================================
 
-`CloudBerry Backup`__ exists in several forms, from a simple and straightforward free version to a complete solution for managed backups designed for service providers.
-.. __
-
-.. _cb: https://www.cloudberrylab.com/backup.aspx
-__ cb_
+`CloudBerry Backup <https://www.cloudberrylab.com/backup.aspx>`_ exists in several forms, from a simple and straightforward free version to a complete solution for managed backups designed for service providers.
 
 In this document I am going to install the product on a Windows PC and configure it to work with an SDS instance.
 
@@ -32,11 +28,13 @@ Open a Powershell CLI (you’ll find it in the menu that appears by right-clicki
 At the prompt, type:
 
 .. code-block:: text
+
   $docker pull openio/sds
 
 Followed by
 
 .. code-block:: text
+
   $docker run -ti --tty -p 192.168.1.121:6007:6007 --net=host openio/sds
 
 .. image:: ./images/Picture1.jpg
